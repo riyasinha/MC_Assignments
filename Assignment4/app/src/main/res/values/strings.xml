@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Assignment4</string>
+    <string name="title_activity_accelerometer">AccelerometerActivity</string>
+    <string name="title_activity_gyroscope">GyroscopeActivity</string>
+    <string name="title_activity_orientation">OrientationActivity</string>
+    <string name="title_activity_proximity">ProximityActivity</string>
+    <string name="title_activity_gps">GPSActivity</string>
+</resources>

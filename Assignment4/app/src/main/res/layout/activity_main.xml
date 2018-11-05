@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <Button
+        android:id="@+id/btnAccelerometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="97dp"
+        android:layout_marginRight="97dp"
+        android:layout_marginTop="101dp"
+        android:onClick="onClick"
+        android:text="Accelerometer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnGyroscope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:onClick="onClick"
+        android:text="Gyroscope"
+        app:layout_constraintStart_toStartOf="@+id/btnAccelerometer"
+        app:layout_constraintTop_toBottomOf="@+id/btnAccelerometer" />
+
+    <Button
+        android:id="@+id/btnOrientation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:onClick="onClick"
+        android:text="Orientation"
+        app:layout_constraintStart_toStartOf="@+id/btnGyroscope"
+        app:layout_constraintTop_toBottomOf="@+id/btnGyroscope" />
+
+    <Button
+        android:id="@+id/btnGPS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:onClick="onClick"
+        android:text="GPS"
+        app:layout_constraintStart_toStartOf="@+id/btnOrientation"
+        app:layout_constraintTop_toBottomOf="@+id/btnOrientation" />
+
+    <Button
+        android:id="@+id/btnProximity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onClick"
+        android:text="Proximity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btnGPS"
+        app:layout_constraintTop_toBottomOf="@+id/btnGPS" />
+</android.support.constraint.ConstraintLayout>
